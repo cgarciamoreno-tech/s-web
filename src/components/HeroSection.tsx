@@ -38,25 +38,6 @@ const HeroSection = () => {
         >
           Calidad, seguridad y confort. Más de 25 años ofreciendo el mejor servicio de transporte de viajeros.
         </motion.p>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
-        >
-          <a
-            href="#presupuesto"
-            className="px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-accent transition-colors"
-          >
-            Solicitar Presupuesto
-          </a>
-          <a
-            href="#servicios"
-            className="px-8 py-4 border border-border text-foreground rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-secondary transition-colors"
-          >
-            Nuestros Servicios
-          </a>
-        </motion.div>
       </div>
 
       {/* Scroll indicator */}
