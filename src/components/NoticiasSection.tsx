@@ -18,7 +18,7 @@ const NoticiasSection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="text-center mb-16"
         >
           <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4">Opiniones</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">Lo que dicen nuestros clientes</h2>
