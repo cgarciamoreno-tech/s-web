@@ -12,7 +12,7 @@ const ContactoSection = () => {
           className="text-center mb-16"
         >
           <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4">Contacto</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">Ponte en contacto</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground">Contacta con nosotros</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
