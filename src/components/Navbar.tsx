@@ -8,7 +8,7 @@ const navItems = [
   { label: "Historia", href: "#historia" },
   { label: "Flota", href: "#flota" },
   { label: "Calidad", href: "#calidad" },
-  { label: "Noticias", href: "#noticias" },
+  { label: "Opiniones", href: "#noticias" },
   { label: "Contacto", href: "#contacto" },
 ];
 
