@@ -71,9 +71,12 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
+          </div>
+
+          <div className="hidden lg:flex items-center">
             <a
               href="#presupuesto"
-              className="ml-2 px-6 py-2.5 bg-primary text-primary-foreground rounded-full text-sm font-semibold hover:bg-accent transition-colors uppercase tracking-wider"
+              className="px-6 py-2.5 bg-primary text-primary-foreground rounded-full text-sm font-semibold hover:bg-accent transition-colors uppercase tracking-wider"
             >
               Presupuesto
             </a>
