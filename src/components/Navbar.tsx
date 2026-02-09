@@ -56,13 +56,6 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <a
-            href="#inicio"
-            className="text-2xl font-bold tracking-tight text-foreground"
-          >
-            Sierra<span className="text-gradient">Bus</span>
-          </a>
-
           {/* Desktop */}
           <div className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
