@@ -47,17 +47,17 @@ const PresupuestoSection = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Nombre</label>
-                <input type="text" required className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="A\xF1ade aqu\xED tu nombre" />
+                <input type="text" required className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="A\xF1ade aqui tu nombre" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Email</label>
-                <input type="email" required className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="A\xF1ade aqu\xED tu email" />
+                <input type="email" required className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="A\xF1ade tu email" />
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Teléfono</label>
-                <input type="tel" className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="A\xF1ade aqu\xED tu tel\xE9fono" />
+                <input type="tel" className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="A\xF1ade aqui tu telefono" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Tipo de servicio</label>
