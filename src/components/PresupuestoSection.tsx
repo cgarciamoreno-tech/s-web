@@ -74,7 +74,7 @@ const PresupuestoSection = () => {
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-2">Mensaje</label>
-              <textarea rows={4} required className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none" placeholder="Cuentanos los detalles del servicio que necesitas" />
+              <textarea rows={4} required className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none" placeholder="\xA1Cuentanos todos los detalles del servicio que necesitas! " />
             </div>
             <button type="submit" className="w-full py-4 bg-primary text-primary-foreground rounded-xl font-semibold uppercase tracking-wider hover:bg-accent transition-colors flex items-center justify-center gap-3">
               <Send className="w-4 h-4" />
