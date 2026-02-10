@@ -17,10 +17,10 @@ const ContactoSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: MapPin, title: "Dirección", lines: ["Sierra de Madrid", "Madrid, España"] },
+            { icon: MapPin, title: "Dirección", lines: ["C. Cam. de las Labores, 21", "28440 Guadarrama, Madrid"] },
             { icon: Phone, title: "Teléfono", lines: ["91 851 03 67"] },
             { icon: Mail, title: "Email", lines: ["info@sierrabus.net"] },
-            { icon: Clock, title: "Horario", lines: ["Atención 24h", "365 días al año"] },
+            { icon: Clock, title: "Horario", lines: ["Lunes - Viernes", "9h - 14h / 16h - 19h"] },
           ].map((item, i) => (
             <motion.div
               key={item.title}

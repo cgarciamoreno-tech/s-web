@@ -18,7 +18,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-sm md:text-base uppercase tracking-[0.3em] text-muted-foreground mb-6"
+          className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-6"
         >
           Alquiler de autobuses en Madrid
         </motion.p>
@@ -36,7 +36,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
         >
-          Calidad, seguridad y confort. Más de 25 años ofreciendo el mejor servicio de transporte de viajeros.
+          Calidad, seguridad y confort. Más de 40 años ofreciendo el mejor servicio de transporte de viajeros.
         </motion.p>
       </div>
 
@@ -48,7 +48,7 @@ const HeroSection = () => {
         transition={{ delay: 1.2 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground"
       >
-        <span className="text-xs uppercase tracking-[0.2em]">Scroll Down</span>
+        <span className="text-xs uppercase tracking-[0.2em]">DESLIZA HACIA ABAJO</span>
         <motion.div animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>
           <ChevronDown className="w-5 h-5" />
         </motion.div>
