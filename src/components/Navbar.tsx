@@ -35,7 +35,7 @@ const Navbar = () => {
           }
         });
       },
-      { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
+      { rootMargin: "-20% 0px -75% 0px", threshold: 0 }
     );
 
     sectionIds.forEach((id) => {
