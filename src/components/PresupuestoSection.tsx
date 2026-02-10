@@ -51,13 +51,13 @@ const PresupuestoSection = () => {
               </div>
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Email</label>
-                <input type="email" required className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="tu@email.com" />
+                <input type="email" required className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Tu email" />
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Teléfono</label>
-                <input type="tel" className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Tu tel\xE9fono" />
+                <input type="tel" className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Tu telefono" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Tipo de servicio</label>
@@ -74,7 +74,7 @@ const PresupuestoSection = () => {
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-2">Mensaje</label>
-              <textarea rows={4} required className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none" placeholder="Cuéntanos los detalles de tu servicio..." />
+              <textarea rows={4} required className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none" placeholder="Cu\xE9ntanos los detalles de tu servicio" />
             </div>
             <button type="submit" className="w-full py-4 bg-primary text-primary-foreground rounded-xl font-semibold uppercase tracking-wider hover:bg-accent transition-colors flex items-center justify-center gap-3">
               <Send className="w-4 h-4" />
