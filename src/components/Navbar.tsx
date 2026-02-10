@@ -18,37 +18,32 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("inicio");
 
   useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 50);
-      if (window.scrollY < 100) {
-        setActiveSection("inicio");
-      }
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  // Detect active section on scroll
-  useEffect(() => {
     const sectionIds = navItems.map((item) => item.href.replace("#", ""));
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: "-20% 0px -75% 0px", threshold: 0 }
-    );
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setScrolled(scrollY > 50);
 
-    sectionIds.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
+      // Find which section is currently in view
+      const heroEl = document.getElementById("inicio");
+      if (heroEl && scrollY < heroEl.offsetHeight - 200) {
+        setActiveSection("inicio");
+        return;
+      }
 
-    return () => observer.disconnect();
+      // Check sections from bottom to top to find the current one
+      for (let i = sectionIds.length - 1; i >= 0; i--) {
+        const el = document.getElementById(sectionIds[i]);
+        if (el && scrollY >= el.offsetTop - 150) {
+          setActiveSection(sectionIds[i]);
+          return;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run on mount
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
