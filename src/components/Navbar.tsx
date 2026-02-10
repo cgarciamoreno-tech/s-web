@@ -5,9 +5,9 @@ import { Menu, X } from "lucide-react";
 const navItems = [
   { label: "Inicio", href: "#inicio" },
   { label: "Servicios", href: "#servicios" },
-  { label: "Historia", href: "#historia" },
   { label: "Flota", href: "#flota" },
   { label: "Calidad", href: "#calidad" },
+  { label: "Historia", href: "#historia" },
   { label: "Opiniones", href: "#noticias" },
   { label: "Contacto", href: "#contacto" },
 ];
