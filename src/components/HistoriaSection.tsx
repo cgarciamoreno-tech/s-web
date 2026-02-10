@@ -30,10 +30,10 @@ const HistoriaSection = () => {
             viewport={{ once: true }}
           >
             <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4">Historia</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">Más de 25 años de experiencia</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">Más de 40 años de experiencia</h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                En SierraBus nos dedicamos al <strong className="text-foreground">transporte discrecional</strong> de viajeros por carretera, avalados con más de <strong className="text-foreground">25 años</strong> de experiencia en el sector.
+                En SierraBus nos dedicamos al <strong className="text-foreground">transporte discrecional</strong> de viajeros por carretera, avalados con más de <strong className="text-foreground">40 años</strong> de experiencia en el sector.
               </p>
               <p>
                 Fundada por <strong className="text-foreground">Don Antonio Gea García</strong> en 1988, ofrecemos un servicio directo y personal a cada tipo de cliente, permitiéndonos conocer a fondo sus necesidades.
