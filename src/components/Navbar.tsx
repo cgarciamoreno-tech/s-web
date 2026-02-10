@@ -18,7 +18,12 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("inicio");
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 50);
+      if (window.scrollY < 100) {
+        setActiveSection("inicio");
+      }
+    };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
