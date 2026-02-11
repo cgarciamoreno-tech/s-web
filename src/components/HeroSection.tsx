@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import logoSierrabus from "@/assets/logo-sierrabus.png";
 
 const HeroSection = () => {
   return (
@@ -22,14 +23,14 @@ const HeroSection = () => {
         >
           Alquiler de autobuses en Madrid
         </motion.p>
-        <motion.h1
+        <motion.img
+          src={logoSierrabus}
+          alt="SierraBus"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight text-foreground"
-        >
-          SIERRA<span className="text-gradient">BUS</span>
-        </motion.h1>
+          className="max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] w-full mx-auto"
+        />
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
