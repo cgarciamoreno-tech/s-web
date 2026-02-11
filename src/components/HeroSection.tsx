@@ -13,30 +13,32 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 hero-overlay" />
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-6">
+      {/* Logo - outside stacking context so mix-blend-multiply works with actual background */}
+      <motion.img
+        src={logoSierrabus}
+        alt="SierraBus"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="relative max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] w-full mx-auto"
+        style={{ mixBlendMode: 'multiply' }}
+      />
+
+      {/* Text above and below logo */}
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 pointer-events-none">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-6"
+          className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-40"
         >
           Alquiler de autobuses en Madrid
         </motion.p>
-        <motion.img
-          src={logoSierrabus}
-          alt="SierraBus"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] w-full mx-auto"
-          style={{ mixBlendMode: 'multiply' }}
-        />
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
+          className="mt-40 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
         >
           Calidad, seguridad y confort. Más de 40 años ofreciendo el mejor servicio de transporte de viajeros.
         </motion.p>
