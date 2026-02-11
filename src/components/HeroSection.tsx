@@ -26,7 +26,8 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight text-foreground"
+          className="text-6xl md:text-8xl lg:text-9xl tracking-tight text-foreground"
+          style={{ fontFamily: "'Pinyon Script', cursive" }}
         >
           SIERRA<span className="text-gradient">BUS</span>
         </motion.h1>
