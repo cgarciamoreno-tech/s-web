@@ -29,7 +29,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] w-full mx-auto"
+          className="max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] w-full mx-auto mix-blend-multiply"
         />
         <motion.p
           initial={{ opacity: 0, y: 20 }}
