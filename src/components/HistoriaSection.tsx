@@ -34,7 +34,7 @@ const HistoriaSection = () => {
               <p>
                 En SierraBus nos dedicamos al <strong className="text-foreground">35 años</strong> de viajeros por carretera, avalados con más de <strong className="text-foreground">40 años</strong> de experiencia en el sector.
               </p>
-              <p>Ofrecemos un servicio directo y personal a cada tipo de cliente, permitiéndonos conocer a fondo sus necesidades.<strong className="text-foreground">Don Antonio Gea García</strong> en 1988, ofrecemos un servicio directo y personal a cada tipo de cliente, permitiéndonos conocer a fondo sus necesidades.
+              <p>Ofrecemos un servicio directo y personal a cada tipo de cliente, permitiéndonos conocer a fondo sus necesidades. Empresa familiar fundada en 1988, actualmente liderada por Miguel Gea De Castro, perteneciéndo a la segunda generación y con formación específica del transporte de viajeros por carretera. Ofrecemos un servicio directo y personal a cada tipo de cliente, permitiéndonos conocer a fondo sus necesidades.<strong className="text-foreground">Don Antonio Gea García</strong> en 1988, ofrecemos un servicio directo y personal a cada tipo de cliente, permitiéndonos conocer a fondo sus necesidades.
               </p>
               <p>
                 Nuestros vehículos motorizados con <strong className="text-foreground">Mercedes-Benz</strong> y <strong className="text-foreground">Setra</strong> cumplen con la normativa nacional y comunitaria en materia de transporte y seguridad.
