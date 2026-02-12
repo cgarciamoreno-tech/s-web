@@ -28,7 +28,7 @@ const ContactoSection = () => {
             const content =
             <>
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-primary/20 transition-colors">
-                  <item.icon className="w-6 h-6 text-primary" />
+                  
                 </div>
                 <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors mb-2">{item.title}</h3>
                 {item.lines.map((line) =>
