@@ -13,29 +13,57 @@ const HeroSection = () => {
       />
       <div className="absolute inset-0 hero-overlay" />
 
-      {/* Logo - outside stacking context so mix-blend-multiply works with actual background */}
+      {/* SVG filters: convert white bg to transparent, then colorize */}
+      <svg className="absolute w-0 h-0" aria-hidden="true">
+        <defs>
+          <filter id="color-sierra" colorInterpolationFilters="sRGB">
+            <feColorMatrix type="luminanceToAlpha" result="luma" />
+            <feComponentTransfer in="luma" result="inverted">
+              <feFuncA type="linear" slope="-4" intercept="4" />
+            </feComponentTransfer>
+            <feFlood floodColor="#1F3556" result="color" />
+            <feComposite in="color" in2="inverted" operator="in" />
+          </filter>
+          <filter id="color-bus" colorInterpolationFilters="sRGB">
+            <feColorMatrix type="luminanceToAlpha" result="luma" />
+            <feComponentTransfer in="luma" result="inverted">
+              <feFuncA type="linear" slope="-4" intercept="4" />
+            </feComponentTransfer>
+            <feFlood floodColor="#3E86C6" result="color" />
+            <feComposite in="color" in2="inverted" operator="in" />
+          </filter>
+        </defs>
+      </svg>
+
+      {/* Logo with corporate colors */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="relative flex items-center justify-center mx-auto"
+        className="relative flex items-center justify-center mx-auto z-10"
       >
-        <span
-          className="text-[80px] md:text-[130px] lg:text-[180px] font-black uppercase tracking-tight leading-none"
-          style={{ color: '#1F3556' }}
-        >
-          SIERRA
-        </span>
-        <span
-          className="text-[80px] md:text-[130px] lg:text-[180px] font-black uppercase tracking-tight leading-none"
-          style={{
-            background: 'linear-gradient(135deg, #2F6FA3, #3E86C6)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-          }}
-        >
-          BUS
-        </span>
+        <div className="relative inline-block">
+          {/* SIERRA portion */}
+          <img
+            src={logoSierrabus}
+            alt="SierraBus"
+            className="w-[280px] md:w-[450px] lg:w-[600px]"
+            style={{
+              filter: 'url(#color-sierra)',
+              clipPath: 'inset(0 41% 0 0)',
+            }}
+          />
+          {/* BUS portion */}
+          <img
+            src={logoSierrabus}
+            alt=""
+            className="absolute inset-0 w-[280px] md:w-[450px] lg:w-[600px]"
+            style={{
+              filter: 'url(#color-bus)',
+              clipPath: 'inset(0 0 0 58%)',
+            }}
+          />
+        </div>
       </motion.div>
 
       {/* Text above and below logo */}
@@ -44,7 +72,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-        className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-40"
+          className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-40"
         >
           Alquiler de autocares en Madrid
         </motion.p>
