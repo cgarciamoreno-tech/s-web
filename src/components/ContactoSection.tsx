@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram, Linkedin, Facebook } from "lucide-react";
 
 const ContactoSection = () => {
   return (
@@ -38,6 +38,32 @@ const ContactoSection = () => {
                 <p key={line} className="text-sm text-muted-foreground">{line}</p>
               ))}
             </motion.div>
+          ))}
+        </div>
+
+        {/* Social links */}
+        <div className="flex justify-center gap-12 mt-12">
+          {[
+            { icon: Instagram, title: "Instagram", href: "https://www.instagram.com/sierrabus_/?hl=en" },
+            { icon: Linkedin, title: "Linkedin", href: "https://es.linkedin.com/company/sierrab-s" },
+            { icon: Facebook, title: "Facebook", href: "https://www.facebook.com/sierrabus/" },
+          ].map((item, i) => (
+            <motion.a
+              key={item.title}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 + i * 0.1 }}
+              className="text-center group"
+            >
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-primary/20 transition-colors">
+                <item.icon className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">{item.title}</h3>
+            </motion.a>
           ))}
         </div>
       </div>
