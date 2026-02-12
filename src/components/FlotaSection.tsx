@@ -1,27 +1,27 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const categories = ["Todos", "Autocares", "Microbus", "Midibus", "Van", "Remolque"];
+const categories = ["Autocares", "Midibuses", "Microbuses", "Van", "Luxury", "Vintage", "Remolques"];
 
 const vehicles = [
-  { src: "https://sierrabus.net/wp-content/uploads/2025/6.jpeg", cat: "Autocares" },
-  { src: "https://sierrabus.net/wp-content/uploads/2025/8.jpeg", cat: "Autocares" },
-  { src: "https://sierrabus.net/wp-content/uploads/2025/10.jpeg", cat: "Autocares" },
-  { src: "https://sierrabus.net/wp-content/uploads/2017/12/setra1.jpg", cat: "Autocares" },
-  { src: "https://sierrabus.net/wp-content/uploads/2017/12/setra2.jpg", cat: "Autocares" },
-  { src: "https://sierrabus.net/wp-content/uploads/2017/12/tourismo2.jpg", cat: "Autocares" },
-  { src: "https://sierrabus.net/wp-content/uploads/2019/04/IMG_2729.jpg", cat: "Microbus" },
-  { src: "https://sierrabus.net/wp-content/uploads/2019/04/IMG_2727.jpg", cat: "Microbus" },
-  { src: "https://sierrabus.net/wp-content/uploads/2019/04/IMG_1698.jpg", cat: "Midibus" },
-  { src: "https://sierrabus.net/wp-content/uploads/2019/04/Imagen-229.jpg", cat: "Van" },
-  { src: "https://sierrabus.net/wp-content/uploads/2020/5/vip.jpeg", cat: "Autocares" },
-  { src: "https://sierrabus.net/wp-content/uploads/2020/5/sb_pwc.jpg", cat: "Remolque" },
+  { src: "https://sierrabus.net/wp-content/uploads/2025/6.jpeg", cat: "Midibuses" },
+  { src: "https://sierrabus.net/wp-content/uploads/2025/8.jpeg", cat: "Midibuses" },
+  { src: "https://sierrabus.net/wp-content/uploads/2025/10.jpeg", cat: "Midibuses" },
+  { src: "https://sierrabus.net/wp-content/uploads/2017/12/setra1.jpg", cat: "Midibuses" },
+  { src: "https://sierrabus.net/wp-content/uploads/2017/12/setra2.jpg", cat: "Midibuses" },
+  { src: "https://sierrabus.net/wp-content/uploads/2017/12/tourismo2.jpg", cat: "Midibuses" },
+  { src: "https://sierrabus.net/wp-content/uploads/2019/04/IMG_2729.jpg", cat: "Microbuses" },
+  { src: "https://sierrabus.net/wp-content/uploads/2019/04/IMG_2727.jpg", cat: "Microbuses" },
+  { src: "https://sierrabus.net/wp-content/uploads/2019/04/IMG_1698.jpg", cat: "Van" },
+  { src: "https://sierrabus.net/wp-content/uploads/2019/04/Imagen-229.jpg", cat: "Luxury" },
+  { src: "https://sierrabus.net/wp-content/uploads/2020/5/vip.jpeg", cat: "Midibuses" },
+  { src: "https://sierrabus.net/wp-content/uploads/2020/5/sb_pwc.jpg", cat: "Vintage" },
 ];
 
 const FlotaSection = () => {
-  const [active, setActive] = useState("Todos");
+  const [active, setActive] = useState("Autocares");
 
-  const filtered = active === "Todos" ? vehicles : vehicles.filter((v) => v.cat === active);
+  const filtered = active === "Autocares" ? vehicles : vehicles.filter((v) => v.cat === active);
 
   return (
     <section id="flota" className="section-padding">

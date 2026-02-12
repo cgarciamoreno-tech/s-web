@@ -14,15 +14,29 @@ const HeroSection = () => {
       <div className="absolute inset-0 hero-overlay" />
 
       {/* Logo - outside stacking context so mix-blend-multiply works with actual background */}
-      <motion.img
-        src={logoSierrabus}
-        alt="SierraBus"
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="relative max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] w-full mx-auto"
-        style={{ mixBlendMode: 'multiply' }}
-      />
+        className="relative flex items-center justify-center mx-auto"
+      >
+        <span
+          className="text-[80px] md:text-[130px] lg:text-[180px] font-black uppercase tracking-tight leading-none"
+          style={{ color: '#1F3556' }}
+        >
+          SIERRA
+        </span>
+        <span
+          className="text-[80px] md:text-[130px] lg:text-[180px] font-black uppercase tracking-tight leading-none"
+          style={{
+            background: 'linear-gradient(135deg, #2F6FA3, #3E86C6)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+          }}
+        >
+          BUS
+        </span>
+      </motion.div>
 
       {/* Text above and below logo */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6 pointer-events-none">
@@ -30,9 +44,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-40"
+        className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-40"
         >
-          Alquiler de autobuses en Madrid
+          Alquiler de autocares en Madrid
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

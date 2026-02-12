@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { Award, HeartPulse, Wind, Leaf, Wifi, Accessibility } from "lucide-react";
+import { Award, HeartPulse, Wind, Leaf, ShieldPlus, Accessibility } from "lucide-react";
 
 const items = [
   { icon: Award, title: "ISO 9001", desc: "Adaptación de nuestros procesos de gestión a la norma de estandarización ISO 9001." },
   { icon: HeartPulse, title: "Desfibrilador DESA", desc: "Incorporación opcional de desfibrilador semiautomático. Solo un 2% de empresas españolas lo ofrecen." },
   { icon: Wind, title: "Desinfección periódica", desc: "Tratamiento de desinfección del aire interior mediante cañón de ozono físico-químico." },
   { icon: Leaf, title: "Conducción eficiente", desc: "Cursos periódicos de conducción eficiente y segura. Concienciación con el medio ambiente." },
-  { icon: Wifi, title: "WiFi a bordo", desc: "Conexión WiFi gratuita disponible en nuestros vehículos para tu comodidad." },
+  { icon: ShieldPlus, title: "Asientos salvavidas", desc: "Seguridad avanzada: asientos con sistema e-Rescue." },
   { icon: Accessibility, title: "Accesibilidad PMR", desc: "Vehículos adaptados para personas con movilidad reducida, garantizando la inclusión." },
 ];
 

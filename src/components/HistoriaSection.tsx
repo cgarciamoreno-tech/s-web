@@ -11,7 +11,7 @@ const values = [{
 }, {
   icon: Gem,
   title: "Valores",
-  desc: "Puntualidad, seriedad, limpieza, buen trato, atención 24h los 365 días del año."
+  desc: "Puntualidad, seriedad, limpieza, buen trato, servicio 24h."
 }];
 const HistoriaSection = () => {
   return <section id="historia" className="section-padding" style={{

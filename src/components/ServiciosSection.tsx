@@ -30,7 +30,7 @@ const services = [{
   desc: "Viajes nacionales e internacionales con total comodidad."
 }, {
   icon: Bus,
-  title: "Servicios discrecionales",
+  title: "Servicios especiales",
   desc: "Alquiler flexible con conductor para cualquier tipo de necesidad."
 }];
 const ServiciosSection = () => {
