@@ -31,7 +31,7 @@ const services = [{
 }, {
   icon: Bus,
   title: "Servicios discrecionales",
-  desc: "Alquiler con conductor flexible para cualquier tipo de necesidad."
+  desc: "Alquiler flexible con conductor para cualquier tipo de necesidad."
 }];
 const ServiciosSection = () => {
   return <section id="servicios" className="section-padding">
