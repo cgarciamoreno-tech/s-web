@@ -23,7 +23,7 @@ const services = [{
 }, {
   icon: Plane,
   title: "Transfers aeropuerto",
-  desc: "Recogida y traslado puntual desde cualquier aeropuerto."
+  desc: "Recogida y traslado puntual desde y hasta el aeropuerto."
 }, {
   icon: Users,
   title: "Excursiones y viajes",
