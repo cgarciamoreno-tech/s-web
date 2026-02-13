@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock, Instagram, Linkedin, Facebook } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram, Linkedin, Facebook, Briefcase } from "lucide-react";
 
 const ContactoSection = () => {
   return (
@@ -65,6 +65,32 @@ const ContactoSection = () => {
             );
           })}
         </div>
+
+        {/* Empleo block */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-20 max-w-2xl mx-auto text-center glass-card p-10 rounded-2xl"
+          style={{ background: "hsla(215, 60%, 25%, 0.05)" }}
+        >
+          <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
+            <Briefcase className="w-6 h-6 text-primary" />
+          </div>
+          <h3 className="text-xl font-bold text-foreground mb-4">¿Quieres unirte a nuestro equipo?</h3>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-2">
+            Si te apasiona el transporte y el trato al cliente, nos encantaría conocerte.
+          </p>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-2">
+            Buscamos personas responsables y comprometidas con la seguridad y el servicio.
+          </p>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Envíanos tu CV a{" "}
+            <a href="mailto:info@sierrabus.net" className="font-bold text-primary hover:underline">
+              info@sierrabus.net
+            </a>
+          </p>
+        </motion.div>
       </div>
     </section>
   );

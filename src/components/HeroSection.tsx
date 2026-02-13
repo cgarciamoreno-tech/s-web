@@ -43,24 +43,24 @@ const HeroSection = () => {
         className="relative flex items-center justify-center mx-auto z-10"
       >
         <div className="relative inline-block">
-          {/* SIERRA portion */}
+          {/* SIERRA portion - clip right at 56% to include full "a" */}
           <img
             src={logoSierrabus}
             alt="SierraBus"
-            className="w-[280px] md:w-[450px] lg:w-[600px]"
+            className="w-[340px] md:w-[550px] lg:w-[720px]"
             style={{
               filter: 'url(#color-sierra)',
-              clipPath: 'inset(0 41% 0 0)',
+              clipPath: 'inset(0 44% 0 0)',
             }}
           />
           {/* BUS portion */}
           <img
             src={logoSierrabus}
             alt=""
-            className="absolute inset-0 w-[280px] md:w-[450px] lg:w-[600px]"
+            className="absolute inset-0 w-[340px] md:w-[550px] lg:w-[720px]"
             style={{
               filter: 'url(#color-bus)',
-              clipPath: 'inset(0 0 0 58%)',
+              clipPath: 'inset(0 0 0 56%)',
             }}
           />
         </div>
@@ -72,7 +72,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-40"
+          className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-44"
         >
           Alquiler de autocares en Madrid
         </motion.p>
@@ -80,7 +80,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-40 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
+          className="mt-44 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
         >
           Calidad, seguridad y confort. Más de 40 años ofreciendo el mejor servicio de transporte de viajeros.
         </motion.p>
