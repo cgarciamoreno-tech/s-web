@@ -77,7 +77,7 @@ const HistoriaSection = () => {
           className="text-center mt-24 mb-16">
 
           
-          <h2 className="text-4xl font-bold text-foreground md:text-4xl">Comprometidos con la excelencia</h2>
+          <h2 className="text-4xl font-bold text-foreground md:text-5xl">Comprometidos con la excelencia</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
