@@ -43,24 +43,24 @@ const HeroSection = () => {
         className="relative flex items-center justify-center mx-auto z-10"
       >
         <div className="relative inline-block">
-          {/* SIERRA portion - clip right at 56% to include full "a" */}
+          {/* SIERRA portion - clip to include full "a" */}
           <img
             src={logoSierrabus}
             alt="SierraBus"
-            className="w-[340px] md:w-[550px] lg:w-[720px]"
+            className="w-[500px] md:w-[800px] lg:w-[1000px]"
             style={{
               filter: 'url(#color-sierra)',
-              clipPath: 'inset(0 44% 0 0)',
+              clipPath: 'inset(0 40% 0 0)',
             }}
           />
           {/* BUS portion */}
           <img
             src={logoSierrabus}
             alt=""
-            className="absolute inset-0 w-[340px] md:w-[550px] lg:w-[720px]"
+            className="absolute inset-0 w-[500px] md:w-[800px] lg:w-[1000px]"
             style={{
               filter: 'url(#color-bus)',
-              clipPath: 'inset(0 0 0 56%)',
+              clipPath: 'inset(0 0 0 60%)',
             }}
           />
         </div>

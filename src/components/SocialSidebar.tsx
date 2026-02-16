@@ -1,7 +1,7 @@
 import { Instagram, Linkedin, Facebook } from "lucide-react";
 
 const socials = [
-  { icon: Instagram, href: "https://www.instagram.com/sierrabus", label: "Instagram" },
+  { icon: Instagram, href: "https://www.instagram.com/sierrabus_/", label: "Instagram" },
   { icon: Linkedin, href: "https://es.linkedin.com/company/sierrab-s", label: "LinkedIn" },
   { icon: Facebook, href: "https://www.facebook.com/sierrabus/", label: "Facebook" },
 ];
