@@ -28,13 +28,13 @@ const HistoriaSection = () => {
             viewport={{ once: true }}>
 
             <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4">Sobre nosotros</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">Más de 35 años de experiencia</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">Más de 40 años de experiencia</h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                En SierraBus nos dedicamos al transporte de viajeros por carretera, avalados con más de <strong className="text-foreground">40 años</strong> de experiencia en el sector.
+                En Sierrabus nos dedicamos al transporte de viajeros por carretera, avalados con <strong className="text-foreground">más de 40 años</strong> de experiencia en el sector.
               </p>
               <p>
-                Ofrecemos un servicio directo y personal a cada tipo de cliente, permitiéndonos conocer a fondo sus necesidades.<strong className="text-foreground">Don Antonio Gea García</strong> en 1988, ofrecemos un servicio directo y personal a cada tipo de cliente, permitiéndonos conocer a fondo sus necesidades.
+                Ofrecemos un servicio directo y personal a cada tipo de cliente, permitiéndonos conocer a fondo sus necesidades. Fundada en 1988, ofrecemos un servicio directo y personal a cada tipo de cliente, permitiéndonos conocer a fondo sus necesidades.
               </p>
               <p>
                 Nuestros vehículos motorizados con <strong className="text-foreground">Mercedes-Benz</strong> y <strong className="text-foreground">Setra</strong> cumplen con la normativa nacional y comunitaria en materia de transporte y seguridad.

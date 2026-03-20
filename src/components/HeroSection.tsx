@@ -29,7 +29,7 @@ const HeroSection = () => {
             <feComponentTransfer in="luma" result="inverted">
               <feFuncA type="linear" slope="-4" intercept="4" />
             </feComponentTransfer>
-            <feFlood floodColor="#3E86C6" result="color" />
+            <feFlood floodColor="#1F3556" result="color" />
             <feComposite in="color" in2="inverted" operator="in" />
           </filter>
         </defs>
@@ -72,7 +72,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-44"
+          className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-44 text-center w-full"
         >
           Alquiler de autocares en Madrid
         </motion.p>
@@ -80,7 +80,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-44 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
+          className="mt-44 text-lg md:text-xl text-muted-foreground text-center w-full"
         >
           Calidad, seguridad y confort. Más de 40 años ofreciendo el mejor servicio de transporte de viajeros.
         </motion.p>
