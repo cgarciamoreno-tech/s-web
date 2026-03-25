@@ -3,7 +3,7 @@ import { Target, Eye, Gem, Award, HeartPulse, Wind, Leaf, ShieldPlus, Accessibil
 
 const values = [
 { icon: Target, title: "Misión", desc: "Garantizar el servicio más diferenciador, personalizado y confortable a nuestros clientes." },
-{ icon: Eye, title: "VisióOn", desc: "Ser referentes en el sector del transporte discrecional, ofreciendo un servicio de máxima calidad." },
+{ icon: Eye, title: "Visión", desc: "Ser referentes en el sector del transporte discrecional, ofreciendo un servicio de máxima calidad." },
 { icon: Gem, title: "Valores", desc: "Puntualidad, seriedad, limpieza, buen trato, servicio 24h." }];
 
 
