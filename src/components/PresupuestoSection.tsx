@@ -12,7 +12,7 @@ const PresupuestoSection = () => {
     nombre: "",
     email: "",
     telefono: "",
-    servicio: "Rutas escolares",
+    servicio: "",
     mensaje: "",
   });
 
@@ -62,7 +62,7 @@ const PresupuestoSection = () => {
       }} className="text-center mb-12">
           <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4">Presupuesto</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Solicita tu presupuesto</h2>
-          <p className="text-muted-foreground">Sin compromiso. Te respondemos en un plazo de 24/48 horas.</p>
+          <p className="text-muted-foreground">Te responderemos en un plazo de 24/48 horas.</p>
         </motion.div>
 
         {submitted ? <motion.div initial={{
@@ -104,6 +104,7 @@ const PresupuestoSection = () => {
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Tipo de servicio</label>
                 <select name="servicio" value={form.servicio} onChange={handleChange} className="w-full px-4 py-3 bg-secondary border border-border rounded-xl text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50">
+                  <option value="">Selecciona el tipo de servicio</option>
                   <option>Rutas escolares</option>
                   <option>Bodas y eventos</option>
                   <option>Eventos de empresa</option>

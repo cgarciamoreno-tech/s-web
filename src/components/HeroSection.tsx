@@ -74,7 +74,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="text-sm md:text-base uppercase tracking-[0.3em] text-[hsl(210,50%,25%)] mb-44 text-center w-full"
         >
-          Alquiler de autocares en Madrid
+          Alquiler de autocares en la Comunidad de Madrid
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -82,9 +82,10 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-44 text-lg md:text-xl text-muted-foreground text-center w-full"
         >
-          Calidad, seguridad y confort. Más de 40 años ofreciendo el mejor servicio de transporte de viajeros.
+          Calidad, seguridad y confort. Más de 40 años ofreciendo el mejor servicio de transporte de viajeros
         </motion.p>
       </div>
+
 
       {/* Scroll indicator */}
       <motion.a

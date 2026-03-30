@@ -1,12 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import remolque from "@/assets/IMG_5466 2.jpg";
+import img5 from "@/assets/5.jpg";
+import img1 from "@/assets/1.jpg";
+import img2 from "@/assets/2.jpg";
+import img3 from "@/assets/3.jpg";
+import img4 from "@/assets/4.jpg";
+import img6 from "@/assets/6.jpg";
+import img7 from "@/assets/7.jpg";
 import img_5170 from "@/assets/IMG_5170.jpg";
 import img_5171 from "@/assets/IMG_5171.jpg";
 import img_5169 from "@/assets/IMG_5169.jpg";
 import img_5232 from "@/assets/IMG_5232.jpg";
 import img_5227 from "@/assets/IMG_5227.jpg";
-import img_5233 from "@/assets/IMG_5233.jpg";
 import img_5231 from "@/assets/IMG_5231.jpg";
 import img_5223 from "@/assets/IMG_5223.jpg";
 import img_5222 from "@/assets/IMG_5222.jpg";
@@ -45,27 +51,36 @@ import img_5195 from "@/assets/IMG_5195.jpg";
 import img_5187 from "@/assets/IMG_5187.jpg";
 import img_5212 from "@/assets/IMG_5212.jpg";
 
-const categories = ["Autocares", "Midibuses", "Microbuses", "Van", "Luxury", "Vintage", "Remolques"];
+const categories = ["Autocares", "Midibuses", "Microbuses", "Van", "Luxury", "Vintage", "Remolque", "Ver video"];
 
 const vehicles: { src: string; cat: string; fit?: string }[] = [
-  { src: remolque, cat: "Remolques" },
+  { src: remolque, cat: "Remolque" },
+  { src: img_5174, cat: "Autocares" },
+  { src: img5, cat: "Autocares" },
   { src: img_5170, cat: "Autocares" },
 { src: img_5171, cat: "Autocares" },
-{ src: img_5169, cat: "Remolques" },
+{ src: img_5169, cat: "Remolque" },
 { src: img_5232, cat: "Vintage" },
 { src: img_5227, cat: "Autocares" },
-{ src: img_5233, cat: "Microbuses" },
 { src: img_5231, cat: "Autocares" },
+{ src: img6, cat: "Van" },
+{ src: img7, cat: "Luxury" },
 { src: img_5223, cat: "Luxury" },
 { src: img_5222, cat: "Luxury" },
 { src: img_5220, cat: "Microbuses" },
 { src: img_5217, cat: "Luxury" },
 { src: img_5216, cat: "Luxury" },
+{ src: img2, cat: "Midibuses" },
+{ src: img3, cat: "Midibuses" },
 { src: img_5215, cat: "Midibuses" },
 { src: img_5214, cat: "Midibuses" },
+{ src: img_5191, cat: "Midibuses" },
+{ src: img_5195, cat: "Midibuses" },
+{ src: img1, cat: "Midibuses" },
+{ src: img4, cat: "Midibuses" },
+{ src: img_5207, cat: "Midibuses" },
 { src: img_5211, cat: "Vintage" },
 { src: img_5210, cat: "Autocares" },
-{ src: img_5207, cat: "Midibuses" },
 { src: img_5206, cat: "Luxury" },
 { src: img_5204, cat: "Autocares" },
 { src: img_5203, cat: "Autocares" },
@@ -75,7 +90,6 @@ const vehicles: { src: string; cat: string; fit?: string }[] = [
 { src: img_5197, cat: "Vintage" },
 { src: img_5194, cat: "Vintage" },
 { src: img_5192, cat: "Autocares" },
-{ src: img_5191, cat: "Midibuses" },
 { src: img_5189, cat: "Microbuses" },
 { src: img_5188, cat: "Microbuses" },
 { src: img_5213, cat: "Autocares" },
@@ -88,14 +102,18 @@ const vehicles: { src: string; cat: string; fit?: string }[] = [
 { src: img_5178, cat: "Autocares" },
 { src: img_5177, cat: "Luxury" },
 { src: img_5176, cat: "Microbuses" },
-{ src: img_5174, cat: "Autocares" },
-{ src: img_5195, cat: "Midibuses" },
 { src: img_5187, cat: "Microbuses" },
 { src: img_5212, cat: "Vintage" },
 ];
 
 const FlotaSection = () => {
   const [active, setActive] = useState("Autocares");
+
+  useEffect(() => {
+    const handler = () => setActive("Ver video");
+    window.addEventListener("openFlotaVideo", handler);
+    return () => window.removeEventListener("openFlotaVideo", handler);
+  }, []);
 
   const filtered = vehicles.filter((v) => v.cat === active);
 
@@ -129,7 +147,22 @@ const FlotaSection = () => {
           ))}
         </div>
 
+        {/* Video */}
+        {active === "Ver video" && (
+          <div className="flex justify-center">
+            <div className="w-full max-w-4xl aspect-video rounded-2xl overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/4df5cC7gCUo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+          </div>
+        )}
+
         {/* Grid */}
+        {active !== "Ver video" && (
         <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <AnimatePresence mode="popLayout">
             {filtered.map((v, i) => (
@@ -155,6 +188,7 @@ const FlotaSection = () => {
             ))}
           </AnimatePresence>
         </motion.div>
+        )}
       </div>
     </section>
   );

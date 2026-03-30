@@ -70,6 +70,15 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
+            <button
+              onClick={() => {
+                window.dispatchEvent(new CustomEvent("openFlotaVideo"));
+                document.getElementById("flota")?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="text-sm uppercase tracking-widest text-muted-foreground font-medium hover:text-foreground transition-colors"
+            >
+              Ver video
+            </button>
           </div>
 
           <div className="hidden lg:flex items-center">

@@ -1,19 +1,20 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { Target, Eye, Gem, Award, HeartPulse, Wind, Leaf, ShieldPlus, Accessibility } from "lucide-react";
 
 const values = [
-{ icon: Target, title: "Misión", desc: "Garantizar el servicio más diferenciador, personalizado y confortable a nuestros clientes." },
-{ icon: Eye, title: "Visión", desc: "Ser referentes en el sector del transporte discrecional, ofreciendo un servicio de máxima calidad." },
-{ icon: Gem, title: "Valores", desc: "Puntualidad, seriedad, limpieza, buen trato, servicio 24h." }];
+{ icon: Target, title: "Misión", desc: "Garantizar el servicio más diferenciador, personalizado y confortable a nuestros clientes" },
+{ icon: Eye, title: "Visión", desc: "Ser referentes en el sector del transporte discrecional, ofreciendo un servicio de máxima calidad" },
+{ icon: Gem, title: "Valores", desc: "Puntualidad, seriedad, limpieza, buen trato, servicio 24h" }];
 
 
 const calidadItems = [
-{ icon: Award, title: "ISO 9001", desc: "Adaptación de nuestros procesos de gestión a la norma de estandarización ISO 9001." },
-{ icon: HeartPulse, title: "Desfibrilador DESA", desc: "Incorporación opcional de desfibrilador semiautomático. Solo un 2% de empresas españolas lo ofrecen." },
-{ icon: Wind, title: "Desinfección periódica", desc: "Tratamiento de desinfección del aire interior mediante cañón de ozono físico-químico." },
-{ icon: Leaf, title: "Conducción eficiente", desc: "Cursos periódicos de conducción eficiente y segura. Concienciación con el medio ambiente." },
-{ icon: ShieldPlus, title: "Asientos salvavidas", desc: "Seguridad avanzada: asientos con sistema e-Rescue." },
-{ icon: Accessibility, title: "Accesibilidad PMR", desc: "Vehículos adaptados para personas con movilidad reducida, garantizando la inclusión." }];
+{ icon: Award, title: "ISO 9001", desc: "Adaptación de nuestros procesos de gestión a la norma de estandarización ISO 9001" },
+{ icon: HeartPulse, title: "Desfibrilador DESA", desc: "Incorporación opcional de desfibrilador semiautomático. Solo un 2% de empresas españolas lo ofrecen" },
+{ icon: Wind, title: "Desinfección periódica", desc: "Tratamiento de desinfección del aire interior mediante cañón de ozono físico-químico" },
+{ icon: Leaf, title: "Conducción eficiente", desc: "Cursos periódicos de conducción eficiente y segura. Concienciación con el medio ambiente" },
+{ icon: ShieldPlus, title: "Asientos salvavidas", desc: <span>Seguridad avanzada: asientos con sistema <a href="https://e-rescue.com/es/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:opacity-80 font-bold">e-Rescue</a></span> },
+{ icon: Accessibility, title: "Accesibilidad PMR", desc: "Vehículos adaptados para personas con movilidad reducida, garantizando la inclusión" }];
 
 
 const HistoriaSection = () => {
@@ -94,7 +95,7 @@ const HistoriaSection = () => {
                 <item.icon className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">{item.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc as React.ReactNode}</p>
             </motion.div>
           )}
         </div>
