@@ -3,35 +3,35 @@ import { Bus, Heart, Film, Trophy, Building2, GraduationCap, Plane, Users } from
 const services = [{
   icon: GraduationCap,
   title: "Rutas escolares y de trabajadores",
-  desc: "Transporte diario seguro y puntual para colegios y empresas."
+  desc: "Transporte diario seguro y puntual para colegios y empresas"
 }, {
   icon: Heart,
   title: "Bodas, bautizos y comuniones",
-  desc: "Servicio personalizado para los momentos más especiales."
+  desc: "Servicio personalizado para los momentos más especiales"
 }, {
   icon: Film,
   title: "Rodajes cinematográficos",
-  desc: "Transporte especializado para producciones audiovisuales."
+  desc: "Transporte especializado para producciones audiovisuales"
 }, {
   icon: Trophy,
   title: "Equipos deportivos",
-  desc: "Traslado cómodo y seguro para competiciones y entrenamientos."
+  desc: "Traslado cómodo y seguro para competiciones y entrenamientos"
 }, {
   icon: Building2,
   title: "Eventos de empresa",
-  desc: "Soluciones de transporte corporativo a medida."
+  desc: "Soluciones de transporte corporativo a medida"
 }, {
   icon: Plane,
   title: "Transfers aeropuerto",
-  desc: "Recogida y traslado puntual desde y hasta el aeropuerto."
+  desc: "Recogida y traslado puntual desde y hasta el aeropuerto"
 }, {
   icon: Users,
   title: "Excursiones y viajes",
-  desc: "Viajes nacionales e internacionales con total comodidad."
+  desc: "Viajes nacionales e internacionales con total comodidad"
 }, {
   icon: Bus,
   title: "Servicios especiales",
-  desc: "Alquiler flexible con conductor para cualquier tipo de necesidad."
+  desc: "Alquiler flexible con conductor para cualquier tipo de necesidad"
 }];
 const ServiciosSection = () => {
   return <section id="servicios" className="section-padding">
