@@ -152,7 +152,7 @@ const FlotaSection = () => {
           <div className="flex justify-center">
             <div className="w-full max-w-4xl aspect-video rounded-2xl overflow-hidden">
               <iframe
-                src="https://www.youtube.com/embed/4df5cC7gCUo"
+                src="https://www.youtube.com/embed/7jfTaOfYRF8"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="w-full h-full"

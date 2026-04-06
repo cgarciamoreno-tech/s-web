@@ -56,7 +56,7 @@ const HeroSection = () => {
           {/* BUS portion */}
           <img
             src={logoSierrabus}
-            alt=""
+            alt="SierraBus logo"
             className="absolute inset-0 w-[500px] md:w-[800px] lg:w-[1000px]"
             style={{
               filter: 'url(#color-bus)',
